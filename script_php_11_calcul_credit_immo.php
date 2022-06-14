@@ -8,7 +8,7 @@ $revenu = readline();
 // $charges = readline();
 // $charges *= 12;
 echo "Combien voulez vous empruntez ?\n";
-$pret = readline();
+$demande = readline();
 
 $annee = [5,10,15,20,25];
 
@@ -20,11 +20,13 @@ $capacite = ($revenu)*$endette*12;
 echo "mensualité max : ",$capacite/12," euros\n";
 
 for($i=0; $i<sizeof($annee); $i++){
+  
+    $pret = $capacite * $annee[$i];
+    if($demande > $pret ){
+    echo "désolé tu ne peux faire le crédit de $demande demandé en revanche ...\n";
     
-    $em = $annee[$i] * $capacite;
-    echo "tu peux emprunter jusqu'à $em euros sur $annee[$i] ans.\n";
+    }
+    echo "tu peux emprunter jusqu'à $pret euros sur $annee[$i] ans.\n";
 }
-if($pret>$em){
-    echo "désolé tu ne peux faire le crédit demandé";
-}
+
 ?>

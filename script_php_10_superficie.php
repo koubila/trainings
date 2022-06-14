@@ -40,15 +40,12 @@ for($i=0; $i < $piece; $i++){
 }
 echo "\nLa superficie totale du bien est $totalSuperficie m².\n";
 
-
 echo "\n";
 echo "au revoir";
 function superficie(int $a, int $b):int 
 {
     return $a*$b;
 }
-
-
 
 
 ?>
