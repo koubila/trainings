@@ -1,5 +1,13 @@
 <?php
 #les fonctions
+// Demander à l’utilisateur de saisir un nombre entre 5 et 20
+// - Créer une fonction qui créer un tableau et le rempli aléatoirement de 50
+// valeurs
+// - Créer une autre fonction qui fait la somme de toutes les valeurs du tableau
+// envoyé en paramètre
+// - Faites appel à ces deux fonction à chaque tour de boucles relatif au nombre
+// saisi par l’utilisateur
+// - Pour chaque tour afficher la somme du tableau courant
 do
 {echo "entrez un nombre entre 5 et 20:\n";
 $nb = readline();

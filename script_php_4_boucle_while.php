@@ -1,5 +1,14 @@
 <?php
-
+// - Lire une entrée clavier en demandant de tapé un salaire compris entre 1500€ et 3000€
+// - Réaliser un nombre de tour de boucles relatif au nombre de jours dans un mois (30 ou 31
+// comme vous voulez)
+// - Pour chaque tour de boucle et donc chaque jour, aléatoirement vous enlèverez une
+// somme comprise entre 30€ et 200€, à la fin de chaque jour affiché combien il vous reste
+// ainsi que le numéro du jour, ex: “jour n° 25, il me reste 500€”
+// - Si vous arrivez à la fin du mois avec de l’argent, vous affichez le texte “Vous économise X€,
+// Félicitations !”
+// - Si durant le mois vous n’avez plus d’argent, vous affichez le jour durant lequel vous êtes
+// arrivez à 0€ , “Mon compte est vide et on est le X ieme jour du mois” et vous arrêtez le script
 echo "TP boucle WHILE\n";
 echo "Entrer votre salaire (un entier) entre 1500 et 3000 svp\n";
 $sal = trim(fgets(STDIN));

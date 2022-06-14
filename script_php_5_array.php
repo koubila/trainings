@@ -1,6 +1,15 @@
 <?php
 
 #Tp tableaux
+// - Créer un tableau
+// - Lire une entrée clavier en demandant de tapé une valeur numérique en
+// boucle jusqu'à ce que le caractère “q” soit tapé
+// - Insérer chaque valeur saisie dans le tableau
+// - Afficher le nombre de valeur présente dans le tableau
+// - Afficher la somme des valeurs du tableau
+// - Afficher les valeurs du tableau
+// - Trier dans l’ordre croissant les valeurs du tableau
+// - Afficher de nouveau les valeurs du tableau
 $tab = [];
 $somme =0;
 while ($entry!='q'){
