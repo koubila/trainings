@@ -1,4 +1,7 @@
 <?php
+// Une agence immobilière vous demande de réaliser un script permettant de
+// calculer rapidement la superficie d’une maison ou bien d’un appartement.
+// A vous de jouer !!!
 echo "Bienvenue, sur notre application de calcul de surface.\n";
 echo "Entrez le nb de pieces svp :\n";
 $piece = readline();
