@@ -10,9 +10,10 @@ foreach($ville as $v){
     $json = json_decode(file_get_contents($url_api));
     // var_dump($json);
     var_dump($json->name, $json->coord->lat, $json->coord->lon, $json->main->humidity, $json->main->temp, $json->main->pressure);
-    array_push($array,$json->name);
+    array_push($array,$json->name,$json->coord->lat, $json->coord->lon, $json->main->humidity, $json->main->temp, $json->main->pressure,"/");
+    // array_push($array,$json->coord->lat);
     // fputcsv(fgetcsv($fp),$json);
-   
+
 }
 
  fputcsv($fp,$array);
