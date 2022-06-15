@@ -9,8 +9,7 @@ preg_match_all('#(https?://)([\w\d.&:\#@%/;$~_?\+\-=]*)#',$site,$matches);
 // print_r($matches);
 
 foreach($matches[0] as $key=>$match){
-    // echo ;
-    // $data += $match."\n";
+
     array_push($data,$match."\n");
     // foreach($match as $k=>$value){
     //     // file_put_contents($csv,$value);
